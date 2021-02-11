@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Dialog Check internet Connection</string>
+    <string name="body_text">
+
+Quarantine is the perfect time to spend your\n day learning something new, from anywhere!
+</string>
+    <string name="text">
+
+Find a course\nfor you
+</string>
 </resources>

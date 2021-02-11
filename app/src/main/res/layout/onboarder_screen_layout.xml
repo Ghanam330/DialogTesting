@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="279.5dp"
+            >
+            <TextView
+                android:id="@+id/text_desc"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80dp"
+                android:text="@string/body_text"
+                android:textAppearance="@style/body_text"
+                android:lineSpacingExtra="4sp"
+                android:translationY="-2.21sp"
+                android:gravity="center_horizontal|top"
+                />
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/text"
+                android:textAppearance="@style/text"
+                android:lineSpacingExtra="4sp"
+                android:translationY="1.78sp"
+                android:gravity="center_horizontal|bottom"
+                />
+
+
+
+        </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image_pager"
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-0.5dp"
+                />
+
+    </RelativeLayout>
+</RelativeLayout>
