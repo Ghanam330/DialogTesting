@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "610044026183",
+    "firebase_url": "https://codera-m-g-default-rtdb.firebaseio.com",
+    "project_id": "codera-m-g",
+    "storage_bucket": "codera-m-g.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610044026183:android:58e2670949ec7a9c9ac062",
+        "android_client_info": {
+          "package_name": "com.example.coderamg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610044026183-c1olgtjpdt8nmrkj601vg11t5s4qbsv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrDfCH7ILszRhcSd6ZygdH2Aa0HPa5_II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610044026183-c1olgtjpdt8nmrkj601vg11t5s4qbsv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610044026183:android:de84b9132a51cf609ac062",
+        "android_client_info": {
+          "package_name": "com.example.dialogcheckinternetconnection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610044026183-c1olgtjpdt8nmrkj601vg11t5s4qbsv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrDfCH7ILszRhcSd6ZygdH2Aa0HPa5_II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610044026183-c1olgtjpdt8nmrkj601vg11t5s4qbsv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610044026183:android:3a1de9adf63717909ac062",
+        "android_client_info": {
+          "package_name": "com.example.testdatafromefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610044026183-c1olgtjpdt8nmrkj601vg11t5s4qbsv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrDfCH7ILszRhcSd6ZygdH2Aa0HPa5_II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610044026183-c1olgtjpdt8nmrkj601vg11t5s4qbsv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

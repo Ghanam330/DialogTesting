@@ -12,6 +12,7 @@ import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.dialogcheckinternetconnection.Adapter.OnBoardingViewPagerAdapter
 import com.example.dialogcheckinternetconnection.Model.OnBoardingData
+import com.example.dialogcheckinternetconnection.ui.LoginActivity
 import com.google.android.material.tabs.TabLayout
 import java.util.*
 import kotlin.collections.ArrayList
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         if (restorePrefData()) {
-            val i = Intent(applicationContext, MainActivity2::class.java)
+            val i = Intent(applicationContext, LoginActivity::class.java)
             startActivity(i)
             finish()
         }
@@ -56,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             }
             if (poistion == onBoardingData.size) {
                 savePrefData()
-                val i = Intent(applicationContext, MainActivity2::class.java)
+                val i = Intent(applicationContext, LoginActivity::class.java)
                 startActivity(i)
 
             }

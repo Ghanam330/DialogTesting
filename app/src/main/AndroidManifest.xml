@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DialogCheckInternetConnection">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ui.SignUp"/>
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplachScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".MainActivity2" />
 
         <meta-data
             android:name="preloaded_fonts"

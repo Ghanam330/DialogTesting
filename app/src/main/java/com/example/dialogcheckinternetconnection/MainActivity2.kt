@@ -11,13 +11,19 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity2 : AppCompatActivity() {
+ class MainActivity2 : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         checkConnection()
     }
+
+
+
 
     private fun checkConnection() {
         val manager = applicationContext.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
@@ -43,6 +49,6 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-
+   // loadingProgressBar.setVisibility(View.GONE);
 }
 
