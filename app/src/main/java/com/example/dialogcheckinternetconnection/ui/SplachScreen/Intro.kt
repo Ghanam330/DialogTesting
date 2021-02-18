@@ -1,24 +1,21 @@
-package com.example.dialogcheckinternetconnection
+package com.example.dialogcheckinternetconnection.ui.SplachScreen
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TabHost
-import android.widget.TableLayout
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
-import androidx.viewpager2.widget.ViewPager2
 import com.example.dialogcheckinternetconnection.Adapter.OnBoardingViewPagerAdapter
 import com.example.dialogcheckinternetconnection.Model.OnBoardingData
-import com.example.dialogcheckinternetconnection.ui.LoginActivity
+import com.example.dialogcheckinternetconnection.R
+import com.example.dialogcheckinternetconnection.ui.Login.LoginActivity
 import com.google.android.material.tabs.TabLayout
-import java.util.*
 import kotlin.collections.ArrayList
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener as OnTabSelectedListener1
 
-class MainActivity : AppCompatActivity() {
+class Intro : AppCompatActivity() {
     var onBoardingViewPagerAdapter: OnBoardingViewPagerAdapter? = null
     var tabLayout: TabLayout? = null
     var onBoaViewPager: ViewPager? = null
@@ -34,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
             finish()
         }
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.intro)
         tabLayout = findViewById(R.id.tab_indicatom)
         next = findViewById(R.id.txt_next)
         val onBoardingData: MutableList<OnBoardingData> = ArrayList()

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Fragment.SettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="4sp"
+            android:text="Settings"
+            android:textAppearance="@style/text"
+            android:textColor="#3C3A36"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/setting" />
+
+
+        <RelativeLayout
+            android:layout_width="343dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cell">
+
+            <RelativeLayout
+                android:id="@+id/name"
+                android:layout_width="263dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Notifications"
+                    android:textAppearance="@style/text"
+                    android:textSize="20sp"
+                    android:translationY="-2.21sp" />
+
+                <ImageView
+                    android:id="@+id/settings_in"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/ic_notifications" />
+            </RelativeLayout>
+
+            <Switch
+                android:id="@+id/simpleSwitch"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="287dp"
+                android:layout_marginTop="21dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center|center_vertical"
+            android:lineSpacingExtra="2sp"
+            android:text="Account information"
+            android:textSize="20sp"
+            android:textColor="#3C3A36"/>
+
+        <RelativeLayout
+            android:layout_width="343dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cell">
+
+            <RelativeLayout
+                android:layout_width="263dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/rubik_medium"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Name"
+                    android:textAppearance="@style/text"
+                    android:textSize="20sp"
+                    android:translationY="-2.21sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+android:padding="4dp"
+                    android:text="Ahmed Mohamed"
+                    android:textColor="#78746D"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:padding="3dp"
+
+                    android:src="@drawable/ic_person" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="287dp"
+                android:layout_marginTop="21dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="343dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cell">
+
+            <RelativeLayout
+                android:layout_width="263dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/rubik_medium"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Email"
+                    android:textAppearance="@style/text"
+                    android:textSize="20sp"
+                    android:translationY="-2.21sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:padding="4dp"
+                    android:text="AhmedMohamed@gmail.com"
+                    android:textColor="#78746D"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_baseline_email_24" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="287dp"
+                android:layout_marginTop="21dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="343dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cell">
+
+            <RelativeLayout
+                android:layout_width="263dp"
+                android:layout_height="66dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/rubik_medium"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Password"
+                    android:textAppearance="@style/text"
+                    android:textSize="20sp"
+                    android:translationY="-2.21sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:padding="4dp"
+                    android:text="Ahmed Mohamed"
+                    android:textColor="#78746D"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_baseline_lock_open_24" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="287dp"
+                android:layout_marginTop="21dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

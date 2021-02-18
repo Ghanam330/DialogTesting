@@ -1,10 +1,11 @@
-package com.example.dialogcheckinternetconnection
+package com.example.dialogcheckinternetconnection.ui.SplachScreen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
+import com.example.dialogcheckinternetconnection.R
 
 class SplachScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class SplachScreen : AppCompatActivity() {
         // we used the postDelayed(Runnable, time) method
         // to send a message with a delayed time.
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Intro::class.java)
             startActivity(intent)
             finish()
         }, 3000) // 3000 is the delayed time in milliseconds.
