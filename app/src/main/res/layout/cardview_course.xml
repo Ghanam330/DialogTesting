@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="6dp">
+
+        <ImageView
+            android:id="@+id/image_course"
+            android:layout_width="match_parent"
+            android:layout_height="194dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="194dp">
+
+            <TextView
+                android:id="@+id/time_course"
+                android:layout_width="311dp"
+                android:layout_height="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="top"
+                android:lineSpacingExtra="4sp"
+                android:text="3 h 30 min "
+                android:textColor="#5BA092"
+                android:textSize="12sp"
+                android:translationY="-1.89sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="39dp"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="top"
+                android:lineSpacingExtra="4sp"
+                android:text="Course"
+                android:textColor="#3C3A36"
+                android:textSize="24sp"
+                android:translationY="-1.78sp" />
+            <!-- Body Text -->
+            <TextView
+
+                android:id="@+id/course_name"
+                android:layout_width="311dp"
+                android:layout_height="21dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="74dp"
+                android:fontFamily="@font/rubik_light"
+                android:gravity="top"
+                android:lineSpacingExtra="4sp"
+                android:text="Advanced web applications"
+                android:textColor="#3C3A36"
+                android:textSize="14sp"
+                android:translationY="-2.21sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -13,32 +13,41 @@
         android:orientation="vertical">
 
         <TextView
-            android:fontFamily="sans-serif-black"
             android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="32dp"
-            android:text="Profile"
-            android:textSize="24sp"
-            android:textColor="#3C3A36"
-            android:textAppearance="@style/text"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal|top"
             android:lineSpacingExtra="4sp"
-            android:gravity="center_horizontal|top"/>
+            android:text="Profile"
+            android:textAppearance="@style/text"
+            android:textColor="#3C3A36"
+            android:textSize="24sp"
+            android:layout_marginTop="7dp"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="172dp"
             android:layout_height="172dp"
-            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
             android:src="@drawable/profile"
             app:civ_border_color="@color/white"
-            app:civ_border_width="2dp"
-            android:layout_gravity="center" />
-        <RelativeLayout
-            android:layout_width="343dp"
-            android:layout_height="82dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/cell">
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/cource_item"
+                android:layout_width="343dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/cell">
 
                 <TextView
                     android:layout_width="200dp"
@@ -51,63 +60,66 @@
                     android:textAppearance="@style/text"
                     android:textSize="20sp"
                     android:translationY="-2.21sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/saved_item"
+                android:layout_width="343dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/cell">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Saved"
+                    android:textAppearance="@style/text"
+                    android:textSize="20sp"
+                    android:translationY="-2.21sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payment_item"
+                android:layout_width="343dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/cell">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30.68dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/rubik_medium"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Payment"
+                    android:textAppearance="@style/text"
+                    android:textSize="20sp"
+                    android:translationY="-2.21sp" />
 
 
-
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="343dp"
-            android:layout_height="82dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/cell">
+            </RelativeLayout>
 
             <TextView
-                android:layout_width="200dp"
-                android:layout_height="30.68dp"
-                android:layout_centerInParent="true"
+                android:id="@+id/logout_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
                 android:fontFamily="@font/rubik_medium"
                 android:gravity="center"
                 android:lineSpacingExtra="4sp"
-                android:text="Saved"
-                android:textAppearance="@style/text"
-                android:textSize="20sp"
-                android:translationY="-2.21sp" />
+                android:text="Log out"
+                android:textSize="14sp" />
+        </LinearLayout>
 
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="343dp"
-            android:layout_height="82dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/cell">
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="30.68dp"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/rubik_medium"
-                android:gravity="center"
-                android:lineSpacingExtra="4sp"
-                android:text="Payment"
-                android:textAppearance="@style/text"
-                android:textSize="20sp"
-                android:translationY="-2.21sp" />
-
-
-
-
-        </RelativeLayout>
-        <TextView
-            android:layout_marginTop="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik_medium"
-            android:gravity="center"
-            android:lineSpacingExtra="4sp"
-            android:text="Log out"
-            android:textSize="14sp"/>
 
     </LinearLayout>
+
 </FrameLayout>
