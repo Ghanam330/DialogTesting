@@ -8,6 +8,7 @@ Quarantine is the perfect time to spend your\n day learning something new, from 
 
 Find a course\nfor you
 </string>
+    <string name="describtion">You can launch a new career in web develop-\nment today by learning HTML &amp; CSS. You don\'t need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

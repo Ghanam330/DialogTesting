@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dialogcheckinternetconnection.Model.CourseModel;
 import com.example.dialogcheckinternetconnection.R;
+import com.example.dialogcheckinternetconnection.listeners.ItemListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -20,9 +21,11 @@ import java.util.List;
 
 public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.MyViewHolder> {
 List<CourseModel>modelList;
+ItemListener itemListener;
 
-public CourseAdapter(List<CourseModel>modelList){
+public CourseAdapter(List<CourseModel>modelList,ItemListener itemListener){
     this.modelList=modelList;
+    this.itemListener=itemListener;
 }
     @NonNull
     @Override
@@ -42,7 +45,7 @@ public CourseAdapter(List<CourseModel>modelList){
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "welcome", Toast.LENGTH_SHORT).show();
+                itemListener.onNoteClicked(modelList.get(position),position);
             }
         });
     }

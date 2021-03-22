@@ -1,6 +1,7 @@
 package com.example.dialogcheckinternetconnection.Model;
 
 public class CourseModel {
+    private int id;
     private String image;
     private String time;
     private String nameCourse;
@@ -8,10 +9,19 @@ public class CourseModel {
     public CourseModel() {
     }
 
-    public CourseModel(String image, String time, String nameCourse) {
+    public CourseModel(int id, String image, String time, String nameCourse) {
+        this.id = id;
         this.image = image;
         this.time = time;
         this.nameCourse = nameCourse;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getImage() {

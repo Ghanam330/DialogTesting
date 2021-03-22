@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.LessonFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:id="@+id/course_vide"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="270dp" />
+
+        <RelativeLayout
+            android:id="@+id/course_deta"
+            android:layout_width="match_parent"
+            android:layout_height="336dp"
+            android:layout_below="@+id/course_vide"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Introduction"
+               android:textSize="20sp"
+                android:textColor="#3C3A36"
+                android:fontFamily="@font/rubik_medium"
+                android:lineSpacingExtra="2sp"
+                android:translationY="-1.15sp"
+                android:gravity="top"
+                />
+            <TextView
+                android:id="@+id/body_text"
+                android:layout_width="match_parent"
+                android:layout_height="294dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="38dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="You can launch a new career in web develop-\nment today by learning HTML &amp; CSS. You don\'t need a computer science degree or expensive software. All you need is a computer, a bit of time, \na lot of determination, and a teacher you trust.\nOnce the form data has been validated on the client-side, it is okay to submit the form. And, since we covered validation in the previous article, we\'re ready to submit! This article looks at what happens when a user submits a form \u00E2\u0080\u0094 where does the data go, and how do we handle it when it gets there? We also look at some of the security concerns.\n\n"
+                android:textAppearance="@style/body_text"
+                android:textSize="14sp"
+                android:textColor="#78746D"
+                android:fontFamily="@font/rubik_light"
+                android:lineSpacingExtra="4sp"
+                android:translationY="-2.21sp"
+                android:gravity="top"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activity.MainCourse">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headers"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="175dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Android"
+            android:textColor="#3C3A36"
+            android:textSize="24sp"
+            android:translationY="1.7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_conten"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp" >
+        <TextView
+            android:id="@+id/title_item_course"
+            android:layout_width="343dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="Tags For Headers"
+            android:textSize="24sp"
+            android:textColor="#3C3A36"
+            android:fontFamily="@font/rubik_light"
+            android:lineSpacingExtra="3sp"
+            android:translationY="-1.48sp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/segment_con"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp">
+
+            <Button
+                android:id="@+id/fragment_lesion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="#3C3A36"
+                android:background="#F8F2EE"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/rubik_light"
+                android:text="Lessons" />
+
+            <Button
+                android:id="@+id/fragment_test"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:textColor="#3C3A36"
+                android:background="#F8F2EE"
+                android:fontFamily="@font/rubik_light"
+                android:text="Tests" />
+
+            <Button
+                android:id="@+id/fragment_editor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:textColor="#3C3A36"
+                android:background="#F8F2EE"
+                android:fontFamily="@font/rubik_light"
+                android:text="Editor" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</LinearLayout>
