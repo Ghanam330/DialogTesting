@@ -20,19 +20,20 @@ import java.util.List;
 
 
 public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.MyViewHolder> {
-List<CourseModel>modelList;
-ItemListener itemListener;
+    List<CourseModel> modelList;
+    ItemListener itemListener;
 
-public CourseAdapter(List<CourseModel>modelList,ItemListener itemListener){
-    this.modelList=modelList;
-    this.itemListener=itemListener;
-}
+    public CourseAdapter(List<CourseModel> modelList, ItemListener itemListener) {
+        this.modelList = modelList;
+        this.itemListener = itemListener;
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new MyViewHolder(
                 LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_course
-                ,parent,false)
+                        , parent, false)
         );
     }
 
@@ -45,14 +46,14 @@ public CourseAdapter(List<CourseModel>modelList,ItemListener itemListener){
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemListener.onNoteClicked(modelList.get(position),position);
+                itemListener.onNoteClicked(modelList.get(position), position);
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return modelList==null?0:modelList.size() ;
+        return modelList == null ? 0 : modelList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -62,9 +63,9 @@ public CourseAdapter(List<CourseModel>modelList,ItemListener itemListener){
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView=itemView.findViewById(R.id.image_course);
-            textTime=itemView.findViewById(R.id.time_course);
-            textName=itemView.findViewById(R.id.course_name);
+            imageView = itemView.findViewById(R.id.image_course);
+            textTime = itemView.findViewById(R.id.time_course);
+            textName = itemView.findViewById(R.id.course_name);
         }
     }
 }

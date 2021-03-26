@@ -45,9 +45,9 @@ public class CoursesFragment extends Fragment {
         recyclerView = view.findViewById(R.id.rv);
 
         modelList = new ArrayList<>();
-        modelList.add(new CourseModel(0,"https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f", "3 h 30 min ", "Java"));
-        modelList.add(new CourseModel(1,"https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f", "3 h 30 min ", "Kotlin"));
-        modelList.add(new CourseModel(2,"https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f", "3 h 30 min ", "Android"));
+        modelList.add(new CourseModel(0,"https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/ProgramingLangwedge%2Fjava.png?alt=media&token=92c64a55-4aae-4c55-9d3c-8a82fb506933", "3 h 30 min ", "Java"));
+        modelList.add(new CourseModel(1,"https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/ProgramingLangwedge%2FKotlin.png?alt=media&token=1fe5ff10-a4ab-40d2-a796-531cb64dcf95", "3 h 30 min ", "Kotlin"));
+        modelList.add(new CourseModel(2,"https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/ProgramingLangwedge%2Funnamed.jpg?alt=media&token=6be2e6e0-f56a-4e35-ad28-0a7e856a2390", "3 h 30 min ", "Android"));
         RecyclerView.LayoutManager horizontalLayout = new LinearLayoutManager(getContext(),
                 LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(horizontalLayout);

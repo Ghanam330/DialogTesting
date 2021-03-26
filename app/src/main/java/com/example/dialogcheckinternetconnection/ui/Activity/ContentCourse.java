@@ -24,7 +24,7 @@ public class ContentCourse extends AppCompatActivity {
     private String title;
     private RecyclerView recyclerView;
     private ItemCourseAdapter adapter;
-    private List<ItemCourseModel> modelList;
+    private List<ItemCourseModel> modelList =new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,7 @@ public class ContentCourse extends AppCompatActivity {
         if (id == 0) {
             basicJava();
         } else if (id == 1) {
-
+            advancedJava();
         } else if (id == 2) {
 
         }
@@ -58,13 +58,22 @@ public class ContentCourse extends AppCompatActivity {
 
 
     private void basicJava() {
-        modelList = new ArrayList<>();
         modelList.add(new ItemCourseModel("Ahmed", "https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/video%2F1.mp4?alt=media&token=6ae47a79-a7d8-4250-aeaa-7e1ca66bfba6", "https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f"
-                , "AhmedmOHAMEDgHANAM"));
+                , "AhmedMOHAMEDgHANAM"));
         modelList.add(new ItemCourseModel("mohamed", "", "https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f"
-                , "AhmedmOHAMEDgHANAM"));
+                , "AhmedMOHAMEDgHANAM"));
         modelList.add(new ItemCourseModel("Ahmed", "", "https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f"
-                , "AhmedmOHAMEDgHANAM"));
+                , "AhmedMOHAMEDgHANAM"));
+    }
+
+    private void advancedJava() {
+
+        modelList.add(new ItemCourseModel("Ahmed", "https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/video%2F1.mp4?alt=media&token=6ae47a79-a7d8-4250-aeaa-7e1ca66bfba6", "https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f"
+                , "AhmedMOHAMEDgHANAM"));
+        modelList.add(new ItemCourseModel("mohamed", "", "https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f"
+                , "AhmedMOHAMEDgHANAM"));
+        modelList.add(new ItemCourseModel("Ahmed", "", "https://firebasestorage.googleapis.com/v0/b/codera-m-g.appspot.com/o/Patch%2FCS50.png?alt=media&token=b7653441-462c-410c-821b-4a59888c6e5f"
+                , "AhmedMOHAMEDgHANAM"));
     }
 
     public void onItemCourseClicked(ItemCourseModel courseModel, int position) {
@@ -73,9 +82,16 @@ public class ContentCourse extends AppCompatActivity {
         String url_course = modelList.get(position).getUrlVideo();
         String description_course = modelList.get(position).getDescription();
         intent.putExtra("titleItemCourse", txt_course);
-        intent.putExtra("title",title);
+        intent.putExtra("title", title);
         intent.putExtra("urlVideo", url_course);
         intent.putExtra("description", description_course);
+
+
+        //intent.putExtra("setNo", position + 1);
+        intent.putExtra("setNo", position);
+        Toast.makeText(getApplicationContext(),"postion"+position+1, Toast.LENGTH_SHORT).show();
+        
+
         startActivity(intent);
     }
 }

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_layout"
+    style="@style/Theme.AppCompat.Light.NoActionBar">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/text_conten"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/no_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="148dp"
+            android:alpha="0.6"
+            android:fontFamily="@font/rubik_light"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="7sp"
+            android:text="1 of 20"
+            android:textColor="#78746D"
+            android:textSize="16sp"
+            android:translationY="-3.52sp" />
+
+        <TextView
+            android:id="@+id/quastion"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_below="@+id/no_indicator"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/rubik_black"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="4sp"
+            android:textColor="#3C3A36"
+            android:textSize="24sp"
+            android:translationY="-1.78sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/options_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_conten"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#989898"
+            android:text="Button"
+            android:background="@drawable/rounded_borders"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#989898"
+            android:text="Button"
+            android:background="@drawable/rounded_borders"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#989898"
+            android:text="Button"
+            android:background="@drawable/rounded_borders"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#989898"
+            android:background="@drawable/rounded_borders"
+            android:text="Button"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/options_container"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginRight="33dp"
+        android:background="@drawable/button"
+        android:text="Next"
+        android:textColor="@color/white" />
+</RelativeLayout>
+</FrameLayout>

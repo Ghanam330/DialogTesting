@@ -20,6 +20,8 @@ public class MainCourse extends AppCompatActivity {
     Bundle bundle = new Bundle();
     private TextView title_txt, titleCourse_txt;
 
+    int setNo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,19 +33,23 @@ public class MainCourse extends AppCompatActivity {
         titleCourse_txt = findViewById(R.id.title_course);
         fragment = new LessonFragment();
 
+
         Bundle extra = getIntent().getExtras();
         if (extra != null) {
             titleCourse = getIntent().getStringExtra("title");
             titleItemCourse = getIntent().getStringExtra("titleItemCourse");
             urlVideo = getIntent().getStringExtra("urlVideo");
             description = getIntent().getStringExtra("description");
+
+            setNo = getIntent().getIntExtra("setNo",0);
         }
+
         title_txt.setText(titleItemCourse);
         titleCourse_txt.setText(titleCourse);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.frame_layout, fragment).commit();
 
-        // bundle.putString("title", titleCourse);
+        bundle.putString("title", titleCourse);
         bundle.putString("urlVideo", urlVideo);
         bundle.putString("description", description);
         fragment.setArguments(bundle);
@@ -52,17 +58,20 @@ public class MainCourse extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout
                     , fragment).commit();
             fragment.setArguments(bundle);
-            return;
+
         });
         btn_editor.setOnClickListener(v -> {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout
                     , new EditorFragment()).commit();
-           return;
+
         });
         btn_exam.setOnClickListener(v -> {
+            Fragment fragment1 =new ExamFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout
-                    , new ExamFragment()).commit();
-            return;
+                    , fragment1).commit();
+            bundle.putInt("setNo",setNo);
+            bundle.putString("title", titleCourse);
+            fragment1.setArguments(bundle);
         });
     }
 }
