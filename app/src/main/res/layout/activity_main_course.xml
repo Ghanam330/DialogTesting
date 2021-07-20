@@ -55,22 +55,22 @@
         android:layout_height="127dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp" >
+        android:layout_marginRight="10dp">
+
         <TextView
             android:id="@+id/title_item_course"
             android:layout_width="343dp"
             android:layout_height="32dp"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
-            android:text="Tags For Headers"
-            android:textSize="24sp"
-            android:textColor="#3C3A36"
             android:fontFamily="@font/rubik_light"
-            android:lineSpacingExtra="3sp"
-            android:translationY="-1.48sp"
             android:gravity="center"
-            />
+            android:lineSpacingExtra="3sp"
+            android:text="Tags For Headers"
+            android:textColor="#3C3A36"
+            android:textSize="24sp"
+            android:translationY="-1.48sp" />
 
         <LinearLayout
             android:id="@+id/segment_con"
@@ -84,46 +84,45 @@
                 android:id="@+id/fragment_lesion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="16sp"
-                android:textColor="#3C3A36"
-                android:background="#F8F2EE"
                 android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#F8F2EE"
                 android:fontFamily="@font/rubik_light"
-                android:text="Lessons" />
+                android:text="Lessons"
+                android:textColor="#3C3A36"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/fragment_test"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="16sp"
-                android:textColor="#3C3A36"
+                android:layout_weight="1"
                 android:background="#F8F2EE"
                 android:fontFamily="@font/rubik_light"
-                android:text="Tests" />
+                android:text="Tests"
+                android:textColor="#3C3A36"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/fragment_editor"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:textSize="16sp"
-                android:textColor="#3C3A36"
+                android:layout_weight="1"
                 android:background="#F8F2EE"
                 android:fontFamily="@font/rubik_light"
-                android:text="Editor" />
+                android:text="Editor"
+                android:textColor="#3C3A36"
+                android:textSize="16sp" />
         </LinearLayout>
 
     </RelativeLayout>
+
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

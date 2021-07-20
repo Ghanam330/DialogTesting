@@ -34,6 +34,8 @@ public class CourseActivity extends AppCompatActivity {
     private String title;
     private TextView txt_title;
 
+    Intent intent;
+
     public SharedPreferences onBoardingScreen;
     private boolean isFirstTime;
 
@@ -50,13 +52,14 @@ public class CourseActivity extends AppCompatActivity {
         txt_title = findViewById(R.id.title_course);
 
 
-        Bundle extras  = getIntent().getExtras();
+        Bundle extras = getIntent().getExtras();
         if (extras != null) {
             id = getIntent().getIntExtra("position", 0);
             title = getIntent().getStringExtra("title");
         }
 
         txt_title.setText(title);
+
 
 
         RecyclerView.LayoutManager horizontalLayout = new LinearLayoutManager(getApplicationContext(),
@@ -67,6 +70,7 @@ public class CourseActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
 
+
         if (id == 0) {
 
             javaTarck();
@@ -75,12 +79,9 @@ public class CourseActivity extends AppCompatActivity {
 
             kotlinTrack();
 
-
         } else if (id == 2) {
 
             AndroidTrack();
-
-
         }
     }
 
@@ -109,7 +110,6 @@ public class CourseActivity extends AppCompatActivity {
     private void kotlinTrack() {
 
 
-
         myRef.child("Course2").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -126,7 +126,6 @@ public class CourseActivity extends AppCompatActivity {
                 finish();
             }
         });
-
 
 
     }
@@ -151,11 +150,13 @@ public class CourseActivity extends AppCompatActivity {
 
 
     }
+
+
     public void onCourseClicked(CourseModel courseModel, int position) {
         int id = modelList.get(position).getId();
         String title1 = modelList.get(position).getNameCourse();
         String time = modelList.get(position).getTime();
-        Intent intent = new Intent(getApplicationContext(), AboutCourseActivity.class);
+        intent = new Intent(getApplicationContext(), AboutCourseActivity.class);
         intent.putExtra("id", id);
         intent.putExtra("title", title1);
         intent.putExtra("time", time);

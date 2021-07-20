@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".ui.Activity.ContentCourse">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headers"
         android:layout_width="match_parent"
@@ -60,14 +61,14 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <androidx.cardview.widget.CardView
-        android:elevation="3dp"
-        app:cardCornerRadius="5dp"
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="16dp"
+        android:elevation="3dp"
         android:orientation="vertical"
+        app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headers">
@@ -78,46 +79,46 @@
             android:layout_height="334dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:src="@drawable/course_html"
-             />
+            android:src="@drawable/course_html" />
+
         <RelativeLayout
             android:id="@+id/text_conten"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="342dp"
 
             >
+
             <TextView
                 android:id="@+id/title"
                 android:layout_width="311dp"
                 android:layout_height="32dp"
-                android:layout_centerHorizontal="true"
                 android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="16dp"
-                android:text="Html"
-                android:textSize="24sp"
-                android:textColor="#3C3A36"
                 android:fontFamily="@font/rubik_medium"
-                android:lineSpacingExtra="4sp"
-                android:translationY="-1.78sp"
                 android:gravity="top"
-                />
+                android:lineSpacingExtra="4sp"
+                android:text="Html"
+                android:textColor="#3C3A36"
+                android:textSize="24sp"
+                android:translationY="-1.78sp" />
+
             <TextView
                 android:id="@+id/body_text"
                 android:layout_width="311dp"
                 android:layout_height="18dp"
-                android:layout_centerHorizontal="true"
                 android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="56dp"
-                android:text="Advanced web applications"
-                android:textSize="16sp"
-                android:textColor="#78746D"
                 android:fontFamily="@font/rubik_light"
-                android:lineSpacingExtra="0sp"
                 android:gravity="top"
-                />
+                android:lineSpacingExtra="0sp"
+                android:text="Advanced web applications"
+                android:textColor="#78746D"
+                android:textSize="16sp" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

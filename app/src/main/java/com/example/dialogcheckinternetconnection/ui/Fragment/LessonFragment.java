@@ -16,14 +16,9 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.example.dialogcheckinternetconnection.R;
-import com.google.android.exoplayer2.ExoPlayerFactory;
-import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.source.ExtractorMediaSource;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.ui.PlayerView;
-import com.google.android.exoplayer2.upstream.DataSource;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
-import com.google.android.exoplayer2.util.Util;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 
 public class LessonFragment extends Fragment {
@@ -57,14 +52,30 @@ public class LessonFragment extends Fragment {
             description = getArguments().getString("description");
         }
 
+        YouTubePlayerView youTubePlayerView = view.findViewById(R.id.course_vide);
+        getLifecycle().addObserver(youTubePlayerView);
+
+        youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+            @Override
+            public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                String videoId = "PL6Rs84MkNq7lOoVcTiBiTm7wDGeSh5hHZ";
+                youTubePlayer.loadVideo(videoId, 0);
+            }
+        });
+
 
         // videoPlayer = view.findViewById(R.id.course_vide);
-        videoView = view.findViewById(R.id.course_vide);
-        Uri videoUri = getMedia(VIDEO_SAMPLE);
-        videoView.setVideoURI(videoUri);
-        MediaController controller = new MediaController(getContext());
-        controller.setMediaPlayer(videoView);
-        videoView.setMediaController(controller);
+
+
+//        videoView = view.findViewById(R.id.course_vide);
+//        Uri videoUri = getMedia(VIDEO_SAMPLE);
+//        videoView.setVideoURI(videoUri);
+//        MediaController controller = new MediaController(getContext());
+//        controller.setMediaPlayer(videoView);
+//        videoView.setMediaController(controller);
+
+
+
 
         // setUpPlayer(urlVideo);
 

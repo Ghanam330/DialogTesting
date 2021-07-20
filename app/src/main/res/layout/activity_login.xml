@@ -12,18 +12,16 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:theme="@style/Theme.Material"
     tools:context=".ui.Login.LoginActivity">
+
     <ImageView
         android:id="@+id/illustratio"
         android:layout_width="343dp"
         android:layout_height="253dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
         android:background="#00000000"
-  android:src="@drawable/login" />
-
-
-
+        android:src="@drawable/login" />
 
 
     <RelativeLayout
@@ -91,8 +89,7 @@
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                 />
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -111,7 +108,7 @@
                 android:id="@+id/edt_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberPassword"/>
+                android:inputType="numberPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
